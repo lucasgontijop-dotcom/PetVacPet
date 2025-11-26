@@ -1,1 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetVac Pro - O Fim dos Pelos na Casa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#3B82F6',
+                            DEFAULT: '#2563EB',
+                            dark: '#1D4ED8',
+                        },
+                        accent: '#F59E0B'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-pattern {
+            background-color: #f3f4f6;
+            background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .animate-pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- BARRA DE AVISO -->
+    <div class="bg-gray-900 text-white text-center py-2 text-sm font-semibold px-4">
+        📦 ESTOQUE NO BRASIL: Envio Imediato + Frete Grátis para Sul e Sudeste
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-brand-dark tracking-tighter">PetVac<span class="text-brand-light">Pro</span></div>
+            <a href="#oferta" class="hidden md:block bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 shadow-lg">
+                Comprar Agora
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-pattern pt-12 pb-20 px-4 text-center md:text-left">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-block bg-blue-100 text-brand-dark px-3 py-1 rounded-full text-xs font-bold tracking-wide mb-2">
+                    🏆 TECH SOLVER 2024
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-gray-900">
+                    Tose seu Pet sem deixar <span class="text-brand decoration-4 underline decoration-brand-light">nenhum pelo</span> cair no chão.
+                </h1>
+                <p class="text-lg text-gray-600 md:pr-10">
+                    O único sistema 5-em-1 que tosa, escova e aspira 99% da sujeira instantaneamente. Economize com Pet Shop e mantenha sua casa impecável.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 pt-4">
+                    <a href="#oferta" class="bg-brand hover:bg-brand-dark text-white text-lg font-bold py-4 px-8 rounded-lg shadow-xl transition transform hover:-translate-y-1 text-center">
+                        Quero Minha Casa Limpa &raquo;
+                    </a>
+                    <div class="flex items-center justify-center gap-2 text-sm text-gray-500">
+                        <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <span>4.9/5 Avaliações</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <!-- Placeholder para Imagem/GIF do Produto -->
+                <div class="bg-white p-4 rounded-2xl shadow-2xl transform rotate-2 hover:rotate-0 transition duration-500">
+                    <img src="https://ae01.alicdn.com/kf/S030491038b36480e90c679234850d9939/Dog-Grooming-Kit-Vacuum-Suction-99-Pet-Hair-Low-Noise-Pet-Hair-Remover-2-5L-Dust.jpg" alt="Kit de Tosa a Vácuo" class="rounded-lg w-full">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-3 rounded-lg shadow-lg border-l-4 border-brand">
+                        <p class="font-bold text-gray-800">Silencioso</p>
+                        <p class="text-xs text-gray-500">Menos de 74dB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- LOGOS / PROVA SOCIAL -->
+    <section class="bg-white py-8 border-b">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm font-semibold uppercase tracking-widest mb-6">Ideal para todas as raças</p>
+            <div class="flex justify-center gap-8 md:gap-16 opacity-50 grayscale flex-wrap">
+                <!-- Ícones representativos de raças/tipos -->
+                <span class="font-bold text-xl">Golden Retriever</span>
+                <span class="font-bold text-xl">Shih Tzu</span>
+                <span class="font-bold text-xl">Huskies</span>
+                <span class="font-bold text-xl">Gatos Persas</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- O PROBLEMA VS SOLUÇÃO -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Você ama seu pet, mas odeia a sujeira?</h2>
+            <p class="text-gray-600 text-lg">Acabe com a guerra contra os pelos no sofá, na roupa preta e no carro.</p>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition">
+                <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6 text-2xl">❌</div>
+                <h3 class="text-xl font-bold mb-3">Chega de Pelos Voando</h3>
+                <p class="text-gray-600">A tecnologia de sucção captura 99% dos pelos soltos DIRETAMENTE para o reservatório enquanto você escova.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-brand text-white text-xs font-bold px-2 py-1 rounded-bl-lg">TECH</div>
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6 text-2xl">🔇</div>
+                <h3 class="text-xl font-bold mb-3">Ultra Silencioso (< 74dB)</h3>
+                <p class="text-gray-600">Projetado com baixo ruído para não assustar animais sensíveis. 3 níveis de sucção ajustáveis.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition">
+                <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6 text-2xl">💰</div>
+                <h3 class="text-xl font-bold mb-3">Economia Real</h3>
+                <p class="text-gray-600">Um banho e tosa custa em média R$ 120. O PetVac se paga em apenas 5 usos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFOGRÁFICO DE BOLSOS -->
+    <section class="bg-gray-100 py-20 px-4">
+        <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div class="grid md:grid-cols-2">
+                <div class="p-10 md:p-14 bg-brand-dark text-white flex flex-col justify-center">
+                    <h3 class="text-3xl font-bold mb-6">Pet Shop vs. PetVac Pro</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between border-b border-blue-700 pb-2">
+                            <span>Custo Anual Pet Shop</span>
+                            <span class="font-bold text-red-300">R$ 1.800,00</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-blue-700 pb-2">
+                            <span>Estresse do Animal</span>
+                            <span class="font-bold text-red-300">Alto</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-blue-700 pb-2">
+                            <span>Tempo Gasto</span>
+                            <span class="font-bold text-red-300">Horas esperando</span>
+                        </div>
+                        <div class="pt-4 flex items-center justify-between text-xl">
+                            <span>Investimento PetVac</span>
+                            <span class="font-bold text-green-400">R$ 597,00 (Único)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-10 flex flex-col justify-center items-center text-center">
+                    <h4 class="text-2xl font-bold text-gray-800 mb-2">Economia de R$ 1.200</h4>
+                    <p class="text-gray-500 mb-8">Já no primeiro ano de uso.</p>
+                    <img src="https://img.freepik.com/free-photo/cute-dog-being-groomed-home_23-2148967396.jpg" class="rounded-xl shadow-md mb-6 w-full object-cover h-48 opacity-80" alt="Cão feliz">
+                    <a href="#oferta" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition w-full">
+                        Quero Economizar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESPECIFICAÇÕES TÉCNICAS (BASEADO NOS PRINTS) -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">O que vem na caixa? (Kit 5-em-1)</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                <div class="p-4 border rounded-xl">
+                    <div class="text-3xl mb-2">✂️</div>
+                    <div class="text-sm font-bold">Aparador Elétrico</div>
+                </div>
+                <div class="p-4 border rounded-xl">
+                    <div class="text-3xl mb-2">🐶</div>
+                    <div class="text-sm font-bold">Escova de Tosa</div>
+                </div>
+                <div class="p-4 border rounded-xl">
+                    <div class="text-3xl mb-2">💅</div>
+                    <div class="text-sm font-bold">Lixa de Unhas</div>
+                </div>
+                <div class="p-4 border rounded-xl">
+                    <div class="text-3xl mb-2">🌪️</div>
+                    <div class="text-sm font-bold">Bocal de Frestas</div>
+                </div>
+                <div class="p-4 border rounded-xl">
+                    <div class="text-3xl mb-2">🧹</div>
+                    <div class="text-sm font-bold">Escova de Limpeza</div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gray-50 p-6 rounded-xl text-sm text-gray-600 grid md:grid-cols-2 gap-4">
+                <ul class="space-y-2">
+                    <li>• <strong>Potência:</strong> 300W (Sucção >10KPA)</li>
+                    <li>• <strong>Capacidade:</strong> 2.5 Litros (Maior do mercado)</li>
+                    <li>• <strong>Cabo:</strong> 2.5 Metros</li>
+                </ul>
+                <ul class="space-y-2">
+                    <li>• <strong>Mangueira:</strong> 1.5 Metros Reforçada</li>
+                    <li>• <strong>Voltagem:</strong> 110v-127v (Padrão BR)</li>
+                    <li>• <strong>Ruído:</strong> < 74dBA (Silencioso)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTA -->
+    <section id="oferta" class="py-20 bg-brand-light px-4">
+        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div class="bg-red-500 text-white text-center py-2 font-bold uppercase tracking-widest text-sm animate-pulse-slow">
+                Oferta por Tempo Limitado
+            </div>
+            <div class="p-8 md:p-12 text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Kit PetVac Pro™ Completo</h2>
+                <p class="text-gray-500 mb-6">Aspirador + 5 Acessórios + 4 Pentes de Altura</p>
+                
+                <div class="flex justify-center items-center gap-4 mb-8">
+                    <span class="text-gray-400 line-through text-xl">R$ 997,00</span>
+                    <span class="text-5xl font-extrabold text-green-600">R$ 597,90</span>
+                </div>
+                <div class="mb-8 text-sm text-gray-600">
+                    <p>💳 Ou em até 12x de R$ 59,90 no cartão</p>
+                    <p>🚚 Frete Grátis para todo o Brasil</p>
+                </div>
+
+                <a href="#" class="block w-full bg-green-500 hover:bg-green-600 text-white text-xl font-bold py-5 rounded-xl shadow-lg transition transform hover:-translate-y-1 mb-4">
+                    COMPRAR AGORA
+                </a>
+                
+                <p class="text-xs text-gray-400 mt-4">
+                    🔒 Compra Segura • Garantia de 30 Dias • Envio Rastreado
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-12 px-4 bg-gray-50">
+        <div class="max-w-3xl mx-auto">
+            <h3 class="text-2xl font-bold text-center mb-8">Perguntas Frequentes</h3>
+            <div class="space-y-4">
+                <details class="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
+                    <summary class="font-semibold">O barulho assusta o cachorro?</summary>
+                    <p class="mt-2 text-gray-600">Não. O PetVac possui tecnologia de redução de ruído (<74dB). Recomendamos usar a velocidade 1 (Eco) nas primeiras vezes para acostumar o pet.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
+                    <summary class="font-semibold">Serve para pelos longos e embolados?</summary>
+                    <p class="mt-2 text-gray-600">Sim! O acessório de tosa corta facilmente nós, e a sucção impede que o pelo cortado enrosque na lâmina.</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow-sm cursor-pointer">
+                    <summary class="font-semibold">Qual a voltagem?</summary>
+                    <p class="mt-2 text-gray-600">O aparelho é compatível com tomadas 110v a 127v.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm">
+        <p>&copy; 2024 PetVac Store. Todos os direitos reservados.</p>
+        <div class="flex justify-center gap-4 mt-4">
+            <a href="#" class="hover:text-white">Termos de Uso</a>
+            <a href="#" class="hover:text-white">Política de Privacidade</a>
+            <a href="#" class="hover:text-white">Rastrear Pedido</a>
+        </div>
+    </footer>
+
+</body>
+</html>
 
